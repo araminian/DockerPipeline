@@ -12,5 +12,5 @@ jobs:
     - stage: docker-build
       script:
         - echo "$DOCKER_TOKEN" | docker login -u "$DOCKER_USER" --password-stdin
-        - docker build -t "$DOCKER_USER/DockerPipelineExample" .
-        - docker pull "$DOCKER_USER/DockerPipelineExample"
+        - docker build -t "$DOCKER_USER/dockerpipeline" .
+        - docker pull "$DOCKER_USER/dockerpipeline"
