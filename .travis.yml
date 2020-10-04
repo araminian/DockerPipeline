@@ -13,4 +13,5 @@ jobs:
       script:
         - echo "$DOCKER_TOKEN" | docker login -u "$DOCKER_USER" --password-stdin
         - docker build -t "$DOCKER_USER/dockerpipeline" .
+        - docker image ls
         - docker pull "$DOCKER_USER/dockerpipeline"
