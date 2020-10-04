@@ -1,8 +1,8 @@
 FROM ubuntu
 
 RUN apt update \
-    && apt-get install apache2 -y \
-    && apt-get install git -y
+    && apt-get install curl -y \
+    && apt-get install nano -y
 
 CMD ["/bin/bash","-l","-c"]
 
